@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Draw
 
 namespace CableX_v0._0._1
 {
@@ -23,10 +24,14 @@ namespace CableX_v0._0._1
         public MainWindow()
         {
             InitializeComponent();                                
-        }                
-    }
+        }
+        Label label_add_circuit_= new Label();
+        label_add_circuit.Text =
+    }      
     public class ApplicationService
     {
         public static string myTitle = "CableX v0.0.1"; //title and version Main window 
     }
+
+   
 }
