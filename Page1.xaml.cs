@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CableX_v0._0._1.Add_Circuits
+namespace CableX_v0._0._1
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class Window_Circuits : Window
+    public partial class Page1 : Page
     {
-        public Window_Circuits()
+        public Page1()
         {
             InitializeComponent();
         }

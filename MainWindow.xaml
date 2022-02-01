@@ -7,21 +7,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CableX_v0._0._1"
         mc:Ignorable="d"
-        SizeToContent="Height"    
-        Title="{x:Static local:ApplicationService.myTitle}" Height="450" Width="800">
+        SizeToContent="Manual"    
+        Title="{x:Static local:ApplicationService.myTitle}" Height="650" Width="800">
 
-    <Grid>
+    <Grid ShowGridLines="True">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition x:Name="column_circuit" Width="10*"/>
-            <ColumnDefinition x:Name="pnl_help" Width="5*"/>       
+            <ColumnDefinition x:Name="column_circuit" Width="*"/>
+            <ColumnDefinition x:Name="pnl_buttons" Width="*"/>
+            <ColumnDefinition x:Name="pnl_help" Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition x:Name="row_circuit_number" Height="5*"/>
-            <RowDefinition x:Name="row_start_end_circuit" Height="10*"/>
+            <RowDefinition x:Name="row_information" Height="80"/>
+            <RowDefinition x:Name="row_information_add" Height="20"/>
+            <RowDefinition x:Name="row_start_end_button" Height="Auto"/>
         </Grid.RowDefinitions>
+        
+            <Label Content="Program do obliczeń zabezpieczeń kabli oraz obwodów instalacji elektrycznej." HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" FontSize="15" FontWeight="Bold"/>
+            <Label Content="Instrukcja korzystania z programu - naciśnij przycisk - Pomoc." HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" FontSize="15" FontWeight="Bold" Margin="0,40,0,0"/>
 
-        <StackPanel>            
-        </StackPanel>    
+        <StackPanel Grid.Row="0" Grid.Column="3">
+            <Button x:Name="button_help" Content="Pomoc" Height="30" Width="70" Click="button_help_Click" HorizontalAlignment="Right" Margin="0,2,0,0"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="3" Grid.Column="1">
+            <Button x:Name="button_add_circuit" Content="Dodaj obwody" Height="35" Width="200" Click="button_add_circuit_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,55,0,0"/>
+            <Button x:Name="button_add_power" Content="Dodaj obwody" Height="35" Width="200" Click="button_add_circuit_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,5,0,0"/>
 
+        </StackPanel>
     </Grid>
 </Window>
