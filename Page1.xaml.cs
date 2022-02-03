@@ -24,5 +24,7 @@ namespace CableX_v0._0._1
         {
             InitializeComponent();
         }
+
+
     }
 }

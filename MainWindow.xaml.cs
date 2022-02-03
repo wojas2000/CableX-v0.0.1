@@ -24,10 +24,10 @@ namespace CableX_v0._0._1
         {
             InitializeComponent();                                
         }
-        Label label_add_circuit_= new Label();
 
         private void button_add_circuit_Click(object sender, RoutedEventArgs e)
         {
+            Page_click_btn_1.Content  = new Page1();
 
         }
 
