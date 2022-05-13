@@ -1,0 +1,13 @@
+﻿<Window x:Class="CableX_v0._0._1.DodawanieObwodow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CableX_v0._0._1"
+        mc:Ignorable="d"
+        Title="Dodawanie Obwodów" Height="450" Width="800"
+        WindowStartupLocation="Manual">
+    <Grid>
+        
+    </Grid>
+</Window>

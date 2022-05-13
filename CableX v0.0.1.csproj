@@ -9,7 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Window1.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Image\StartApp.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Window1.xaml" />
   </ItemGroup>
 
   <ItemGroup>

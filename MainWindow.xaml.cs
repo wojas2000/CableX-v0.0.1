@@ -18,22 +18,29 @@ namespace CableX_v0._0._1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Window1 : Window
     {
-        public MainWindow()
+        public Window1()
         {
-            InitializeComponent();                                
+            InitializeComponent();
         }
 
         private void button_add_circuit_Click(object sender, RoutedEventArgs e)
         {
-            Page_click_btn_1.Content  = new Page1();
+            Page_click_btn_1.Content = new Page1();
+
+        }
+        private void button_add_power_Click(object sender, RoutedEventArgs e)
+        {
+            DodawanieObwodow thirdWindow = new DodawanieObwodow();
+            thirdWindow.Show();
 
         }
 
         private void button_help_Click(object sender, RoutedEventArgs e)
         {
-
+            HelpWindow secondWindow = new HelpWindow();
+            secondWindow.Show();
         }
     }
     public class ApplicationService
@@ -41,5 +48,5 @@ namespace CableX_v0._0._1
         public static string myTitle = "CableX v0.0.1"; //title and version Main window 
     }
 
-   
+
 }
