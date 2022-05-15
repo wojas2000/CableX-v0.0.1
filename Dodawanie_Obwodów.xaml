@@ -8,6 +8,48 @@
         Title="Dodawanie Obwodów" Height="450" Width="800"
         WindowStartupLocation="Manual">
     <Grid>
+        <Label Grid.Row="0" Content="Aby dodać nowy wiersz nacisńij przycisk +." HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="Auto"/>
+
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Name ="Nazwy_wiersz0" Height="30"/>
+                <RowDefinition Name ="Nazwy_wiersz1" Height="Auto"/>
+                <RowDefinition Name ="Nazwy_wiersz2" Height="Auto"/>
+                <RowDefinition Name="Dane_wierszy" Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name="Lp_0" Width="*"/>
+                <ColumnDefinition Name="Odcinek_od_1" Width="*"/>
+                <ColumnDefinition Name="Odcinek_do_2" Width="*"/>
+                <ColumnDefinition Name="Moc_3" Width="70"/>
+                <ColumnDefinition Name="Napięcie_4"/>
+                <ColumnDefinition Name="Typ_zabezpieczenia_5"/>
+                <ColumnDefinition Name="Prad_znamionowy_zabezpieczenia_6"/>
+                <ColumnDefinition Name="Typ_kabla_7"/>
+                <ColumnDefinition Name="Liczba_zyl_8"/>
+                <ColumnDefinition Name="Przekroj_kabla_9"/>
+                <ColumnDefinition Name="Material_zyly_10"/>
+                <ColumnDefinition Name="Material_izolacji_11"/>
+                <ColumnDefinition Name="Sposob_ulozenia_linii_12"/>
+                <ColumnDefinition Name="Rezystancja_gruntu_13"/>
+                <ColumnDefinition Name="Przycisk_dodwania_wiersza" Width="50"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center">Lp</Label>
+            <Label Grid.Column="3" Grid.Row="2" Content="Moc P[kW]" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"  Content="Obwód" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Grid.Column="1" Grid.Row="2" Content="Od" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top"/>
+            <Label Grid.Column="2" Grid.Row="2" Content="Do" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button Grid.Column="14" Grid.Row="4" Content="+" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Add_Line_Button_Click" Background="#FF38C73A" Width="40"/>
+            
+            <StackPanel Grid.Row="0"
+                x:Name="LabelStackPanel"/>
+
+        </Grid>
         
+        <Grid>
+            <StackPanel Grid.Row="2"
+                x:Name="LabelStackPanel2"/>
+        </Grid>
+        <!-- kod dodawanego wiersza w xaml-->
     </Grid>
 </Window>

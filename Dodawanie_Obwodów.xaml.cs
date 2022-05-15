@@ -23,5 +23,15 @@ namespace CableX_v0._0._1
         {
             InitializeComponent();
         }
+
+        private void Add_Line_Button_Click(object sender, RoutedEventArgs e)
+        {
+            //Label line_label = new Label();
+            //line_label.Content = "Dodana linia";
+            //line_label.Width = 300;
+            LabelStackPanel.Children.Add(new TextBox { }); //Dodawanie wiersza przez kliknięcie przycisku
+            //Button button = new Button();
+            LabelStackPanel2.Children.Add(new Button { Content = "+", Width = 30 }); //Dodwanie przycisku na końcu wiersza
+        }
     }
 }
