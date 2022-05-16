@@ -19,6 +19,9 @@ namespace CableX_v0._0._1
     /// </summary>
     public partial class DodawanieObwodow : Window
     {
+        public Label myLabel;
+        RowDefinition rowDef1;
+
         public DodawanieObwodow()
         {
             InitializeComponent();
@@ -26,12 +29,22 @@ namespace CableX_v0._0._1
 
         private void Add_Line_Button_Click(object sender, RoutedEventArgs e)
         {
-            //Label line_label = new Label();
-            //line_label.Content = "Dodana linia";
-            //line_label.Width = 300;
-            LabelStackPanel.Children.Add(new TextBox { }); //Dodawanie wiersza przez kliknięcie przycisku
-            //Button button = new Button();
-            LabelStackPanel2.Children.Add(new Button { Content = "+", Width = 30 }); //Dodwanie przycisku na końcu wiersza
+            rowDef1 = new RowDefinition();
+            grid_one.RowDefinitions.Add(rowDef1); //Dodaje kolejny wiersz
+
+            Label myLabel = new Label();
+            labelRow4.Content = "Dodana linia";
+            myLabel.Width = 300;
+
+            StackPanel myStackPanel = new StackPanel();
+            //myStackPanel.Children.Add({ Content = "Nowa linijka."});
+
+            TextBox textBox = new TextBox();
+
+            //myStackPanel.Children.Add(myLabel); //Dodawanie wiersza przez kliknięcie przycisku            
+
+            Button myButton = new Button();
+            //myButton.Children.Add({ Content = "+", Width = 30 }); //Dodwanie przycisku na końcu wiersza
         }
     }
 }
