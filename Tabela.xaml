@@ -1,0 +1,15 @@
+﻿<Window x:Class="CableX_v0._0._1.Tabela"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CableX_v0._0._1"
+        mc:Ignorable="d"
+        Title="Tabela obwodów" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+        <Button x:Name="button_exit" Content="Zamknij okno" Height="35" Width="200" Click="button_exit_Click" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,300,10,0"/>
+        </StackPanel>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="DataGrid_SelectionChanged"/>
+    </Grid>
+</Window>
