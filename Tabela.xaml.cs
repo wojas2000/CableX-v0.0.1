@@ -22,14 +22,35 @@ namespace CableX_v0._0._1
         public Tabela()
         {
             InitializeComponent();
+            TabelaObwodow.ItemsSource = LoadCollectionData();
         }
+
+        public class ObwodyHeader
+        {
+            public int Lp { get; set; }
+            public string From { get; set; }
+            public string To { get; set; }
+            public int Power { get; set; }
+        }
+        private List<ObwodyHeader> LoadCollectionData()
+        {
+            List<ObwodyHeader> obwody = new List<ObwodyHeader>();
+            obwody.Add(new ObwodyHeader()
+            {
+                Lp = 101,
+                From = "ZK1",
+                To = "ZK2",
+                Power = 16
+            });           
+            return obwody;
+        }        
 
         private void button_exit_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Tabela_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
